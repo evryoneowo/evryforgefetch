@@ -41,7 +41,7 @@ def minimalbox(data, indent, accent, secondary, reset, title='', x=0, y=0):
                 line += f'\n│ {' ' * max_key_len}   {secondary}{vl.ljust(max_val_len)}{reset} {titleindent}{xindent}│'
                 lines.append(line)
         else:
-            line = f'│ {accent}\x1b[1m{k.ljust(max_key_len)}\x1b[0m{reset}   {secondary}{v.ljust(max_val_len)}{reset} {titleindent}{xindent}│'
+            line = f'│ {accent}\x1b[1m{k.ljust(max_key_len)}\x1b[0m{reset} : {secondary}{v.ljust(max_val_len)}{reset} {titleindent}{xindent}│'
             lines.append(line)
     
     if height - n:
