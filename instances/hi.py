@@ -1,9 +1,11 @@
 import json
+import os
 
 import fetch
 from renderer import renderer
 
-with open('config.json') as f:
+home_dir = os.path.expanduser("~")
+with open(os.path.join(home_dir, '.forgefetch')) as f:
     parsed = json.loads(f.read())
 
 ACCENT = parsed['accent_color']
