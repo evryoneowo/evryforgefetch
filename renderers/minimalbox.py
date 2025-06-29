@@ -35,12 +35,18 @@ def minimalbox(data, indent, accent, secondary, reset, title='', x=0, y=0):
     lines = [top]
     for k, v in data.items():
         n += 1
-        line = f'│ {accent}\x1b[1m{k.ljust(max_key_len)}\x1b[0m{reset} : {secondary}{v.ljust(max_val_len)}{reset} {titleindent}{xindent}│'
-        lines.append(line)
+        if len(v.split('\n')) - 1:
+            line = f'│ {accent}\x1b[1m{k.ljust(max_key_len)}\x1b[0m{reset} : {secondary}{v.split('\n')[0].ljust(max_val_len)}{reset} {titleindent}{xindent}│'
+            for vl in v.split('\n')[1:]:
+                line += f'\n│ {' ' * max_key_len}   {secondary}{vl.ljust(max_val_len)}{reset} {titleindent}{xindent}│'
+                lines.append(line)
+        else:
+            line = f'│ {accent}\x1b[1m{k.ljust(max_key_len)}\x1b[0m{reset}   {secondary}{v.ljust(max_val_len)}{reset} {titleindent}{xindent}│'
+            lines.append(line)
     
     if height - n:
         for _ in range(height-n):
-            lines.append(f'│{(visible_length(lines[0])-4)*" "}│')
+            lines.append(f'│{(visible_length(lines[0])-4)*" "}  │')
     
     lines.append(bottom)
 
