@@ -12,12 +12,16 @@ renders fetch in minimalistic box
 renders fetch "like linux"... (idk why i named it that way)
 
 ### log
-<h3><img src="https://github.com/user-attachments/assets/388e8d46-9cb7-41a4-adf1-ac5e3b90ab2c" height="170px"></h3>
+<h3><img src="https://github.com/user-attachments/assets/388e8d46-9cb7-41a4-adf1-ac5e3b90ab2c" height="200px"></h3>
 log type render
+
+### colorwave
+<h3><img src="https://github.com/user-attachments/assets/23f27b47-0a40-438e-8ad4-fe6230908bf8" height="215px"></h3>
+renders with color gradient. you can edit its colors in `colorwave.py`
 
 ## instances
 ### hi
-<h3><img src="https://github.com/user-attachments/assets/0114cde3-f7c2-4769-97d6-4cb219f8ef62" height="150px"></h3>
+<h3><img src="https://github.com/user-attachments/assets/0114cde3-f7c2-4769-97d6-4cb219f8ef62" height="195px"></h3>
 simple welcome text instance.
 
 ### max
@@ -27,3 +31,4 @@ instance that shows fetch time and text render.
 ## just some beautiful screenshots
 <h3><img src="https://github.com/user-attachments/assets/0f6dd25d-2ab1-4aec-b4b2-2da105ba49a3" height="240px"></h3>
 <h3><img src="https://github.com/user-attachments/assets/a08e59d4-46c4-4eeb-88e6-35545a917711" height="350px"></h3>
+
